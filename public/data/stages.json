@@ -1,0 +1,92 @@
+{
+  "1": {
+    "id": "1",
+    "name": "GREEN",
+    "colorHsl": "hsl(81, 47%, 91%)"
+  },
+  "2": {
+    "id": "2",
+    "name": "WHITE",
+    "colorHsl": "hsl(0, 0%, 94%)"
+  },
+  "3": {
+    "id": "3",
+    "name": "RED MARQUEE",
+    "colorHsl": "hsl(12, 100%, 93%)"
+  },
+  "4": {
+    "id": "4",
+    "name": "FIELD OF HEAVEN",
+    "colorHsl": "hsl(187, 80%, 93%)"
+  },
+  "5": {
+    "id": "5",
+    "name": "GYPSY AVALON",
+    "colorHsl": "hsl(328, 41%, 92%)"
+  },
+  "6": {
+    "id": "6",
+    "name": "木道亭",
+    "colorHsl": "hsl(26, 36%, 92%)"
+  },
+  "7": {
+    "id": "7",
+    "name": "Café de Paris",
+    "colorHsl": "hsl(215, 28%, 88%)"
+  },
+  "8": {
+    "id": "8",
+    "name": "ORANGE CAFÉ",
+    "colorHsl": "hsl(215, 28%, 88%)"
+  },
+  "9": {
+    "id": "9",
+    "name": "オールナイトフジ",
+    "colorHsl": "hsl(37, 100%, 93%)"
+  },
+  "10": {
+    "id": "10",
+    "name": "苗場食堂",
+    "colorHsl": "hsl(56, 41%, 92%)"
+  },
+  "11": {
+    "id": "11",
+    "name": "GAN-BAN SQUARE",
+    "colorHsl": "hsl(0, 0%, 86%)"
+  },
+  "12": {
+    "id": "12",
+    "name": "BLUE GALAXY",
+    "colorHsl": "hsl(214, 21%, 93%)"
+  },
+  "13": {
+    "id": "13",
+    "name": "Day Dreaming",
+    "colorHsl": "hsl(243, 76%, 94%)"
+  },
+  "14": {
+    "id": "14",
+    "name": "POW/Crystal palace",
+    "colorHsl": "hsl(173, 41%, 92%)"
+  },
+  "15": {
+    "id": "15",
+    "name": "POW/Palace Arena",
+    "colorHsl": "hsl(173, 41%, 92%)"
+  },
+  "16": {
+    "id": "16",
+    "name": "POW/ROOKIE A GO-GO",
+    "colorHsl": "hsl(173, 41%, 92%)"
+  },
+  "17": {
+    "id": "17",
+    "name": "Pyramid Garden",
+    "colorHsl": "hsl(308, 38%, 91%)"
+  },
+  "18": {
+    "id": "18",
+    "name": "Orange Echo",
+    "colorHsl": "hsl(36, 100%, 92%)"
+  }
+}

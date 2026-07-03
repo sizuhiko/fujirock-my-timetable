@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -v /Users/kishida/develop/its-iot-study/ai-app-challenge/.git/hooks)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(rm -f .git/foo.txt .git/hookstest .git/myconfig .git/configtest .git/HEAD .git/description)",
+      "Bash(rm -rf .git/branches .git/objects .git/refs)",
+      "Bash(git branch *)",
+      "Bash(git symbolic-ref *)",
+      "Bash(npx --yes create-next-app@latest . --typescript --eslint --app --src-dir --import-alias \"@/*\" --no-tailwind --no-turbopack --use-npm)",
+      "Bash(NODE_USE_ENV_PROXY=1 node --import tsx scripts/scrape/index.ts)",
+      "Bash(node -e \"console.log\\(JSON.stringify\\(require\\('./food-areas.json'\\).slice\\(0,2\\), null, 2\\)\\)\")",
+      "Bash(node -e \"const d=require\\('./timetable-day1.json'\\); console.log\\(d.day, d.sourceUrl, d.scrapedAt\\); console.log\\(JSON.stringify\\(d.eventsByStage['1'].slice\\(0,2\\), null, 2\\)\\); console.log\\('stage keys:', Object.keys\\(d.eventsByStage\\)\\)\")",
+      "Bash(PLAYWRIGHT_BROWSERS_PATH=0 npx playwright install chromium)"
+    ]
+  }
+}

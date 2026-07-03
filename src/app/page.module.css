@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}

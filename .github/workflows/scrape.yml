@@ -1,0 +1,53 @@
+name: Scrape Fuji Rock data
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily at 03:00 UTC (12:00 JST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run scrape
+
+      - name: Commit updated data if changed
+        id: commit
+        run: |
+          if git diff --quiet -- public/data; then
+            echo "No changes in scraped data."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git commit -m "chore: update scraped timetable data"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Commits pushed with GITHUB_TOKEN don't trigger other workflows' `push`
+      # events (this is what keeps scrape.yml and deploy.yml from looping), so
+      # we explicitly kick off a deploy here instead of relying on that push.
+      - name: Trigger deploy workflow
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref ${{ github.ref_name }}

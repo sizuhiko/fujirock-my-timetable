@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.button:hover:not(:disabled) {
+  background: #f2f2f2;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

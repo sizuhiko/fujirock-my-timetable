@@ -1,0 +1,47 @@
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px dashed var(--border);
+  background: #fff;
+  cursor: pointer;
+}
+
+.block:hover {
+  background: #fafafa;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 6px;
+  color: #b00020;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.deleteButton:hover {
+  background: #fce8e8;
+}

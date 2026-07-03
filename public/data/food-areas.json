@@ -1,0 +1,68 @@
+[
+  {
+    "id": "food01",
+    "name": "PYRAMID GARDEN",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area01.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food01"
+  },
+  {
+    "id": "food02",
+    "name": "CAMP SITE",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area02.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food02"
+  },
+  {
+    "id": "food03",
+    "name": "THE PALACE OF WONDER",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area03.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food03"
+  },
+  {
+    "id": "food04",
+    "name": "YELLOW CLIFF",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area04.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food04"
+  },
+  {
+    "id": "food05",
+    "name": "BLUE GALAXY",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area05.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food05"
+  },
+  {
+    "id": "food06",
+    "name": "OASIS",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area06.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food06"
+  },
+  {
+    "id": "food07",
+    "name": "ところ天国",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area07.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food07"
+  },
+  {
+    "id": "food08",
+    "name": "AVALON FIELD",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area08.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food08"
+  },
+  {
+    "id": "food09",
+    "name": "FIELD OF HEAVEN",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area09.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food09"
+  },
+  {
+    "id": "food10",
+    "name": "ORANGE CAFÉ",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area10.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food10"
+  },
+  {
+    "id": "food11",
+    "name": "SKY GRASS",
+    "imageUrl": "https://cdn.fujirockfestival.com/smash/frf/assets/2026/news/img/feat/feat07/area11.jpg",
+    "detailUrl": "https://www.fujirockfestival.com/news/feat07/food11"
+  }
+]

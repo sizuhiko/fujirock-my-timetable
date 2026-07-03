@@ -1,0 +1,24 @@
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+  background: #fbfbfb;
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.slot:hover {
+  background: #f0f0f0;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hint {
+  font-size: 11px;
+  font-weight: 400;
+}
