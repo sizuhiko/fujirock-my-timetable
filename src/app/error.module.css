@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.message {
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.retryButton {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.homeLink {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: #444;
+  font-weight: 600;
+}

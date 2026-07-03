@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { isValidTimeString, parseTimeToMinutes } from "@/lib/time";
 import type { FoodArea } from "@/lib/data/types";
 import { FoodTimeRangePicker } from "./FoodTimeRangePicker";
@@ -46,8 +47,15 @@ export function FoodAreaPickerContent({
               className={styles.areaCard}
               onClick={() => setSelectedArea(area)}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={area.imageUrl} alt={area.name} className={styles.areaImage} />
+              <div className={styles.areaImageWrapper}>
+                <Image
+                  src={area.imageUrl}
+                  alt={area.name}
+                  fill
+                  sizes="(max-width: 560px) 33vw, 180px"
+                  className={styles.areaImage}
+                />
+              </div>
               <span>{area.name}</span>
             </button>
           ))}

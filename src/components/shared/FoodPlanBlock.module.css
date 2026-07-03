@@ -7,17 +7,19 @@
   border-radius: 8px;
   border: 2px dashed var(--border);
   background: #fff;
-  cursor: pointer;
-}
-
-.block:hover {
-  background: #fafafa;
 }
 
 .info {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.info:hover {
+  background: #fafafa;
 }
 
 .time {

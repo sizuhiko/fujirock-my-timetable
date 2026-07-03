@@ -3,7 +3,10 @@ import "./globals.css";
 import { NavBar } from "@/components/shared/NavBar";
 
 export const metadata: Metadata = {
-  title: "フジロック マイタイムテーブル",
+  title: {
+    default: "フジロック マイタイムテーブル",
+    template: "%s | フジロック マイタイムテーブル",
+  },
   description:
     "フジロック当日までの計画をたててマイタイムテーブルを作成し、当日スムーズに移動を行う",
 };
