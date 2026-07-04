@@ -1,7 +1,7 @@
 {
   "day": 3,
   "sourceUrl": "https://www.fujirockfestival.com/artist/timetable/26",
-  "scrapedAt": "2026-07-01T11:53:29.760Z",
+  "scrapedAt": "2026-07-04T06:11:03.599Z",
   "eventsByStage": {
     "1": [
       {
@@ -291,10 +291,10 @@
         "endMinutes": 1090
       },
       {
-        "eventKey": "3-4-5031-19:00",
+        "eventKey": "3-4-6989-19:00",
         "stageId": "4",
-        "contentId": "5031",
-        "artistName": "GOGO PENGUIN",
+        "contentId": "6989",
+        "artistName": "TBA",
         "startRaw": "19:00",
         "endRaw": "20:10",
         "startMinutes": 1140,
