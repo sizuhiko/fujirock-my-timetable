@@ -56,8 +56,11 @@ export function EditorPageClient() {
       .catch(() => setFoodAreas([]));
   }, []);
 
+  const timetableDay = timetableByDay[activeDay];
+  const myData = myDataByDay[activeDay];
+
   useEffect(() => {
-    if (timetableByDay[activeDay] !== undefined) return;
+    if (timetableDay !== undefined) return;
     let cancelled = false;
     fetchTimetableDay(activeDay)
       .then((data) => {
@@ -71,10 +74,10 @@ export function EditorPageClient() {
     return () => {
       cancelled = true;
     };
-  }, [activeDay, timetableByDay]);
+  }, [activeDay, timetableDay]);
 
   useEffect(() => {
-    if (myDataByDay[activeDay]) return;
+    if (myData) return;
     let cancelled = false;
     listAllForDay(activeDay).then((result) => {
       if (cancelled) return;
@@ -83,10 +86,8 @@ export function EditorPageClient() {
     return () => {
       cancelled = true;
     };
-  }, [activeDay, myDataByDay]);
+  }, [activeDay, myData]);
 
-  const timetableDay = timetableByDay[activeDay];
-  const myData = myDataByDay[activeDay];
   const lives = useMemo(() => myData?.lives ?? [], [myData]);
   const foodPlans = myData?.foodPlans ?? [];
   const selectedEventKeys = useMemo(() => new Set(lives.map((l) => l.eventKey)), [lives]);

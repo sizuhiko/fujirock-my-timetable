@@ -22,8 +22,10 @@ export function ViewerPageClient() {
       .catch(() => setStages({}));
   }, []);
 
+  const dayData = dataByDay[activeDay];
+
   useEffect(() => {
-    if (dataByDay[activeDay]) return;
+    if (dayData) return;
     let cancelled = false;
     listAllForDay(activeDay).then((result) => {
       if (cancelled) return;
@@ -32,9 +34,7 @@ export function ViewerPageClient() {
     return () => {
       cancelled = true;
     };
-  }, [activeDay, dataByDay]);
-
-  const dayData = dataByDay[activeDay];
+  }, [activeDay, dayData]);
 
   return (
     <div className={styles.page}>

@@ -26,8 +26,12 @@ export function OfficialTimetableGrid({
     return <p className={styles.empty}>この日のタイムテーブルはまだありません。</p>;
   }
 
-  const rawStart = Math.min(...allEvents.map((e) => e.startMinutes));
-  const rawEnd = Math.max(...allEvents.map((e) => e.endMinutes));
+  let rawStart = allEvents[0].startMinutes;
+  let rawEnd = allEvents[0].endMinutes;
+  for (const event of allEvents) {
+    if (event.startMinutes < rawStart) rawStart = event.startMinutes;
+    if (event.endMinutes > rawEnd) rawEnd = event.endMinutes;
+  }
   const dayStart = Math.floor(rawStart / HOUR_STEP) * HOUR_STEP;
   const dayEnd = Math.ceil(rawEnd / HOUR_STEP) * HOUR_STEP;
   const totalHeight = (dayEnd - dayStart) * PIXELS_PER_MINUTE;
