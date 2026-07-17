@@ -1,7 +1,7 @@
 {
   "day": 3,
   "sourceUrl": "https://www.fujirockfestival.com/artist/timetable/26",
-  "scrapedAt": "2026-07-16T05:31:46.681Z",
+  "scrapedAt": "2026-07-17T05:33:10.677Z",
   "eventsByStage": {
     "1": [
       {
@@ -63,6 +63,16 @@
         "endRaw": "22:40",
         "startMinutes": 1270,
         "endMinutes": 1360
+      },
+      {
+        "eventKey": "3-1-6803-24:00",
+        "stageId": "1",
+        "contentId": "6803",
+        "artistName": "1950’s Western Caravan Orchestra",
+        "startRaw": "24:00",
+        "endRaw": "24:50",
+        "startMinutes": 1440,
+        "endMinutes": 1490
       }
     ],
     "2": [

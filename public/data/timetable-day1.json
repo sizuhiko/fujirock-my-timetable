@@ -1,7 +1,7 @@
 {
   "day": 1,
   "sourceUrl": "https://www.fujirockfestival.com/artist/timetable/24",
-  "scrapedAt": "2026-07-16T05:31:46.602Z",
+  "scrapedAt": "2026-07-17T05:33:10.624Z",
   "eventsByStage": {
     "1": [
       {
@@ -149,10 +149,10 @@
         "endMinutes": 790
       },
       {
-        "eventKey": "1-3-6167-14:00",
+        "eventKey": "1-3-1392-14:00",
         "stageId": "3",
-        "contentId": "6167",
-        "artistName": "SORRY",
+        "contentId": "1392",
+        "artistName": "a flood of circle",
         "startRaw": "14:00",
         "endRaw": "15:00",
         "startMinutes": 840,
